@@ -1,9 +1,10 @@
 #include <stdio.h>
 
 void update(int *a,int *b) {
-    // Complete this function
-    int temp =*a;
-    int* pTemp = &temp;
+    
+    int temp =*a; // take the value of a
+    int* pTemp = &temp; //create a pointer to point the temp value
+    
     (*a)=(*a)+(*b);
     if((*pTemp)-(*b)<0){
         (*b)=-((*pTemp)-(*b));
